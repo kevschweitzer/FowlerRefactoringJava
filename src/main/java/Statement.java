@@ -8,12 +8,9 @@ public abstract class Statement {
 
         while (rentals.hasMoreElements()) {
             Rental each = (Rental) rentals.nextElement();
-
-            //show figures for this rental
             result += eachRentalString(each);
         }
 
-        //add footer lines
         result += footerString(aCustomer);
         return result;
     }
